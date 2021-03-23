@@ -7,7 +7,7 @@ spec:
   gateways:
   - rollouts-demo-gateway
   hosts:
-  - "*"
+  - "*" // eks에서 LB가 자동 생성되고 hostname을 받기 때문에, 여기서는 * 로 처리해준다.
   http:
   - name: primary
     route:
